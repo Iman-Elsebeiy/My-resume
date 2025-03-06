@@ -1,10 +1,11 @@
-  
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
     body {
         font-family: 'Poppins', sans-serif;
         background-color: #f8f9fa;
         padding-top: 70px; /* Adjust depending on navbar height */
-        
-
     }
 
     /* Navbar Styling */
@@ -110,17 +111,20 @@
     }
 
     .about-text {
-        font-size: 1.5rem;
-        max-width: 700px;
+        font-size: 1.3rem;
+        max-width: 70%;
         margin: 0 auto;
-        line-height: 1.8;
+        line-height: 1.5;
+        overflow-y: auto;
     }
 
     .about-image {
-        width: 40%;
+        width:20%;
+        padding: 0%;
         border-radius: 10px;
-        /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); */
         transition: transform 0.3s ease-in-out;
+        position: fixed;
+
     }
 
     .about-image:hover {
@@ -192,4 +196,48 @@
     .btn-primary:hover {
         background-color: #7bb6c5;
     }
+    @media (max-width: 768px) {
+        .about-text {
+            font-size: 1rem;
+            max-width: 90%;
+        }
+    
+        .about-image {
+            width: 60%;
+            display: block;
+            margin: 20px auto;
+        }
+    
+        .navbar {
+            padding: 5px 0;
+        }
+    
+        .navbar-nav {
+            text-align: center;
+        }
+    
+        .nav-link {
+            display: block;
+            padding: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .about-heading {
+            font-size: 1.3rem;
+        }
+    
+        .about-text {
+            font-size: 0.9rem;
+        }
+    
+        .about-image {
+            width: 80%;
+        }
+    
+        .site-footer-title {
+            font-size: 1.2rem;
+        }
+    }
+    
 
