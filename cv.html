@@ -9,60 +9,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css.css">
-    <script src="js.js"></script>
+    <script src="js.js"></script>   
 </head>
 <body>
      <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Mohamed Elmanzalawi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Presentations.html">Presentations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Scholarships.html">Scholarships and Awards</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Links.html">Links</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Mohammed Elmanzalawi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="Presentations.html">Presentations</a></li>
+                <li class="nav-item"><a class="nav-link" href="Scholarships.html">Scholarships and Awards</a></li>
+                <li class="nav-item"><a class="nav-link" href="Links.html">Links</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+            </ul>
         </div>
-    </nav>
-    
-    <main class="container mt-5">
-        <h2 class="text-center mb-4 ">Curriculum Vitae</h2>
-     <section class="row col-lg-12">   
-     <div class="col-lg-5">
-            <img src="imgs/image.png" class="about-image mt-4"alt="Mohammed Image">
-      </div>
-    <div class="col-lg-7">
-        <section>
-            <h3>Education</h3>
-            <ul>
-                <li><strong>M.Sc. in Genetics</strong>, ROIS-National Institute of Genetics, Mishima, Japan (2023/10 – Present)<br>
-                    Advisor: Dr. Nakamura Yasukazu</li>
-                <li><strong>Professional Diploma in Bioinformatics</strong>, Nile University, Giza, Egypt (2021/09 – 2022/02)</li>
-                <li><strong>B.Sc. in Clinical Pharmacy</strong>, Faculty Of Pharmacy Cairo University, Cairo, Egypt (2014/05 – 2019/05)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Research Positions</h3>
-            <ul>
-                <li><strong>Research Intern</strong> (NIGENTERN 2022), ROIS-National Institute of Genetics, Mishima, Japan (2022/06 – 2022/07)</li>
-                <li><strong>Research Student</strong>, Nile University, Giza, Egypt (2021/10 – 2023/03)</li>
-                <li><strong>Research Student</strong>, Medical Research Society, Cairo University, Cairo, Egypt (2016/08 – 2016/09)</li>
-                <li><strong>Research Student</strong>, SCOPS - Students' Conference On Pharmaceutical Studies, Ain Shams University, Cairo, Egypt (2016/03 – 2016/06)</li>
-            </ul>
-        </section>
     </div>
-    </section>
+</nav>
+        <main>    
+        <section class="section-bg row col-lg-12">
+            <!-- Image Section -->
+            <div class="col-lg-2">
+                <img src="imgs/image.png" class="about-image mt-4"alt="Mohammed Image">
+            </div>
+            <!-- Information Section -->
+            <div class="col-lg-10">
+                <h2 class="text-center mb-5"><strong>Curriculum Vitae</strong></h2>
+
+                <!-- Education Section -->
+                <section class="cv-card mb-2">
+                    <h3>🎓 Education</h3>
+                    <ul>
+                        <li><strong>- M.Sc. in Genetics</strong><br>
+                            <a href="#">ROIS-National Institute of Genetics,</a>
+                            <span> Mishima, Japan (2023/10 – Present)</span><br>
+                            <p>Advisor: <span id="Nakamura"> Dr. Nakamura Yasukazu </span><br>
+                            My research spans two pivotal areas: uncovering genomic mutations linked to rare diseases, <br>with a focus on complex intron mutations, and developing DFAST_QC—a critical tool <br> for prokaryotic genome quality check and taxonomic identification.</p>
+                        </li>
+                        <li><strong>- Professional Diploma in Bioinformatics</strong><br>
+                            <p> <a href="#">Nile University,</a>
+                             Giza, Egypt (2021/09 – 2022/02)</p>
+                        </li>
+                        <li><strong>- B.Sc. in Clinical Pharmacy</strong><br>
+                            <a href="#">Faculty Of Pharmacy Cairo University,</a>
+                            <span> Cairo, Egypt (2014/05 – 2019/05)</span>
+                        </li>
+                    </ul>
+                </section>
+    
+                <!-- Research Positions Section -->
+                <section class="cv-card">
+                    <h3>🔬 Research Positions</h3>
+                    <ul>
+                        <li><strong>Research Intern (NIGENTERN 2022)</strong><br>
+                             <span>Advisor: <span id="Nakamura"> Dr. Nakamura Yasukazu </span></span>
+                             <p><a href="#">ROIS-National Institute of Genetics,</a>
+                            Japan (2022/06 – 2022/07)</p>
+                        </li>
+                        <li><strong>Research Student</strong><br>
+                            <a href="#">Nile University,</a>
+                            <p> Egypt (2021/10 – 2023/03)</p>
+                        </li>
+                        <li><strong>Research Student</strong><br>
+                            <a href="#">Medical Research Society, Cairo University,</a>
+                            <p> Egypt (2016/08 – 2016/09)</p>
+                        </li>
+                        <li><strong>Research Student</strong><br>
+                            <a href="#">SCOPS-Students'Conference On Pharmaceutical Studies- ,Ain Shams University,</a>
+                            <p> Cairo, Egypt (2016/03 – 2016/06)</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
     </main>
     
-  
+   
+    
+    
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -96,6 +125,7 @@
     </footer>
     
     <!-- Bootstrap Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">    
 </body>
 </html>

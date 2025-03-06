@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Mohammed Elmanzalawi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -33,8 +33,10 @@
         <section class="section-bg">
             <div class="container">
                 <div class="info-section text-center my-4">
-                    <h2 class="section-title">Keep in touch</h2>
-                    <h3>
+                
+                    <h2 class="form-label mb-5">Keep in touch</h2>
+               
+                <h3>
                         <a href="mailto:your-email@example.com" class="btn btn-outline-light m-1">
                             <i class="bi bi-envelope-fill"></i> Email
                         </a>
@@ -59,7 +61,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-container">
-                            <h3 class="text-center form-label mb-4">I'd love to hear from you</h3>
+                            <h3 class="form-label mb-4">I'd love to hear from you</h3>
                             <form action="https://formspree.io/f/mgvawvnv" method="POST">
                                 <div class="mb-3 row">
                                     <label for="name" class="form-label col-2">Name:</label>
@@ -73,15 +75,15 @@
                                     <label for="message" class="form-label col-2">Message:</label>
                                     <textarea id="message" name="message" placeholder="Your Message" class="form-control" rows="4" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                <button type="submit" class="btn btn-primary w-40">Submit</button>
                             </form>                            
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0">
                         <div class="map-container">
-                            <div class="location-section text-center my-4">
+                            <div class="location-section my-4">
                                 <h5 class="section-title">Mishima, Japan</h5>
-                                <iframe class="w-100" height="250" 
+                                <iframe class="w-100" height="300" 
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13031.887298284005!2d138.9116171285622!3d35.118205165746845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601990ace94868dd%3A0xda75e12b7e2d1963!2z2KfYs9mE2YbYqSDYp9mE2KzZhtin2Kk!5e0!3m2!1sar!2sjp!4v1709642585185!5m2!1sar!2sjp" 
                                     style="border:0;" 
                                     allowfullscreen="" 
@@ -145,6 +147,7 @@
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
