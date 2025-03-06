@@ -2,7 +2,11 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
-    body {
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body {
         font-family: 'Poppins', sans-serif;
         background-color: #f8f9fa;
         padding-top: 70px; /* Adjust depending on navbar height */
@@ -239,5 +243,94 @@ html, body {
             font-size: 1.2rem;
         }
     }
+    /* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Ensure elements do not exceed the screen width */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive Fix for About Image */
+@media (max-width: 768px) {
+    .about-image {
+        width: 50%;
+        position: fixed;
+        top: 70px; /* Adjust based on navbar height */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999; /* Ensure it's above other content */
+    }
+
+    .about-text {
+        font-size: 1rem;
+        max-width: 90%;
+        margin-top: 150px; /* Space for fixed image */
+        text-align: center;
+    }
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-image {
+        width: 50%;
+        max-width: 300px; /* Prevents it from being too large */
+        position: fixed;
+        top: 70px; /* Adjusted based on navbar height */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        max-width: 90%;
+        margin-top: 180px; /* Ensures text is below the fixed image */
+        text-align: center;
+    }
+
+    .about-image:hover {
+        transform: none; /* Prevents unwanted scaling on mobile */
+    }
+}
+
+/* Further Adjustments for Smaller Screens */
+@media (max-width: 480px) {
+    .about-image {
+        width: 70%;
+        top: 60px;
+        max-width: 250px;
+    }
+
+    .about-heading {
+        font-size: 1.3rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+        margin-top: 200px; /* Adjusted to fit the fixed image */
+    }
+
+    .site-footer-title {
+        font-size: 1.2rem;
+    }
+}
+
     
 
